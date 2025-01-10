@@ -1,3 +1,11 @@
+<!--
+ * @Author: shysgsg 1054733568@qq.com
+ * @Date: 2024-12-14 23:21:42
+ * @LastEditors: shysgsg 1054733568@qq.com
+ * @LastEditTime: 2025-01-10 16:37:50
+ * @FilePath: \人工智能\homework\homework12\homework12.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # homework12
 
 ## 问题一
@@ -8,10 +16,10 @@
    - 证明：
      - 根据贝叶斯定理，\(P(a|b, c)=\frac{P(a, b, c)}{P(b, c)}\)，\(P(b|a, c)=\frac{P(a, b, c)}{P(a, c)}\)
      - 已知\(P(a|b, c) = P(b|a, c)\)，即\(\frac{P(a, b, c)}{P(b, c)}=\frac{P(a, b, c)}{P(a, c)}\)
-     - 由此可得\(P(a, c) = P(b, c)\)
+     - 由此可得\(P(a, c) = P(b, c)\)（\(P(a, b, c) \neq 0\)时）
      - 再根据条件概率的定义，\(P(a|c)=\frac{P(a, c)}{P(c)}\)，\(P(b|c)=\frac{P(b, c)}{P(c)}\)
      - 因为\(P(a, c) = P(b, c)\)，所以\(P(a|c) = P(b|c)\)
-   - 所以第一个断言是正确的。
+   - 所以第一个断言不是正确的，仅当\(P(a, b, c) \neq 0\)时是正确的。
 
 2. 接着分析第二个断言：
    - 断言为：If \(P(a|b, c) = P(a)\), then \(P(b|c) = P(b)\)
